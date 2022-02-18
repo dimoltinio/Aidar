@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gigarofl</title>
+</head>
+<body>
+    <style>
+        .but1{
+            width: 100%;
+        }
+        .but1 div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 3s;
+            opacity: 0;
+        }
+        .but1 input{
+            width: 98%;
+            height: 100px; 
+            background: url(zxc.gif);
+            background-size:contain;
+            color: red;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <div style="display: flex">
+        <div id="raz" class="but1">
+            <input type="button" value="ROFL-1">
+        </div>
+
+        <div id="raz2" class="but1">
+            <input type="button" value="ROFL-2">
+        </div>
+
+        <div id="raz3" class="but1">
+            <input type="button" value="ROFL-3">
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('#raz input').onclick = function(){
+            var newDiv = document.createElement('div');
+            newDiv.innerHTML = '<span>Beka</span> <img style="width: 450px; height: 250px;" src="beka.png">';
+            this.parentNode.appendChild(newDiv);
+            getComputedStyle(newDiv).opacity;
+            newDiv.style = 'opacity: 1; font-size: 48px;';
+        }
+        document.querySelector('#raz2 input').onclick = function(){
+            var newDiv = document.createElement('div');
+            newDiv.innerHTML = '<span>Aidar</span> <img style="width: 450px; height: 250px;x" src="aidar.png">';
+            this.parentNode.appendChild(newDiv);
+            getComputedStyle(newDiv).opacity;
+            newDiv.style = 'opacity: 1; font-size: 48px;';
+        }
+        document.querySelector('#raz3 input').onclick = function(){
+            var newDiv = document.createElement('div');
+            newDiv.innerHTML = '<span>Imash</span> <img style="width: 450px; height: 250px;" src="imash.png">';
+            this.parentNode.appendChild(newDiv);
+            getComputedStyle(newDiv).opacity;
+            newDiv.style = 'opacity: 1; font-size: 48px;';
+        }
+    </script>
+
+</body>
+</html>
